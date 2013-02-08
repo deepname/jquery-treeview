@@ -67,13 +67,13 @@
 			}).add( $("a", this) ).hoverClass();
 
 			if (!settings.prerendered) {
-				// handle closed ones first
-				this.filter(":has(>ul:hidden)")
+				// handle closed all elements who have the class clossed
+				tthis.filter(".closed")
 						.addClass(CLASSES.expandable)
 						.replaceClass(CLASSES.last, CLASSES.lastExpandable);
 
-				// handle open ones
-				this.not(":has(>ul:hidden)")
+				// handle open all elements who have the class open
+				this.filter(".open")
 						.addClass(CLASSES.collapsable)
 						.replaceClass(CLASSES.last, CLASSES.lastCollapsable);
 
