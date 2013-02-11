@@ -68,7 +68,7 @@
 
 			if (!settings.prerendered) {
 				// handle closed all elements who have the class clossed
-				tthis.filter(".closed")
+				this.filter(".closed")
 						.addClass(CLASSES.expandable)
 						.replaceClass(CLASSES.last, CLASSES.lastExpandable);
 
